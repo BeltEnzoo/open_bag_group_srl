@@ -24,6 +24,17 @@
   overflow: hidden;
   aspect-ratio: 4 / 3;
   background: var(--gray-100);
+  padding: 0;
+  border: none;
+  cursor: zoom-in;
+  display: block;
+  width: 100%;
+}
+
+.nosotros__shot:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+  z-index: 1;
 }
 
 .nosotros__shot:nth-child(1),

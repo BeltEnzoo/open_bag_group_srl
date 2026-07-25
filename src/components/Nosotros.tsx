@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { useReveal } from '../hooks/useReveal'
+import { Lightbox } from './Lightbox'
 import './Nosotros.css'
 
 const collage = [
@@ -10,6 +12,7 @@ const collage = [
 
 export function Nosotros() {
   const ref = useReveal<HTMLElement>()
+  const [active, setActive] = useState<number | null>(null)
 
   return (
     <section id="nosotros" className="nosotros" ref={ref}>
@@ -22,11 +25,17 @@ export function Nosotros() {
         </header>
 
         <div className="nosotros__grid">
-          <div className="nosotros__collage reveal reveal-delay-1" aria-hidden="false">
-            {collage.map((item) => (
-              <figure key={item.src} className="nosotros__shot">
+          <div className="nosotros__collage reveal reveal-delay-1">
+            {collage.map((item, i) => (
+              <button
+                key={item.src}
+                type="button"
+                className="nosotros__shot"
+                onClick={() => setActive(i)}
+                aria-label={`Ampliar: ${item.alt}`}
+              >
                 <img src={item.src} alt={item.alt} loading="lazy" />
-              </figure>
+              </button>
             ))}
           </div>
 
@@ -69,6 +78,20 @@ export function Nosotros() {
           </div>
         </div>
       </div>
+
+      <Lightbox
+        images={collage}
+        index={active}
+        onClose={() => setActive(null)}
+        onPrev={() =>
+          setActive((i) =>
+            i === null ? i : (i - 1 + collage.length) % collage.length,
+          )
+        }
+        onNext={() =>
+          setActive((i) => (i === null ? i : (i + 1) % collage.length))
+        }
+      />
     </section>
   )
 }
