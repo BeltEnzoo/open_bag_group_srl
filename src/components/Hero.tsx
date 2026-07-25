@@ -18,7 +18,7 @@ export function Hero() {
       </div>
 
       <div className="hero__content container reveal" ref={ref}>
-        <BrandLogo variant="light" className="brand-logo--hero reveal-delay-1" />
+        <BrandLogo className="brand-logo--hero reveal-delay-1" />
         <h1 className="hero__title reveal-delay-1">Envases flexibles</h1>
         <p className="hero__lead reveal-delay-2">
           Nos especializamos en big bag complejos para la industria alimenticia,

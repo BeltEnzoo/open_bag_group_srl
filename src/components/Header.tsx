@@ -31,7 +31,10 @@ export function Header() {
     <header className={`header ${scrolled ? 'header--scrolled' : ''} ${open ? 'header--open' : ''}`}>
       <div className="header__inner container-wide">
         <a href="#inicio" className="header__brand" aria-label="Open Bag — inicio">
-          <BrandLogo className={scrolled ? 'brand-logo--compact' : ''} />
+          <BrandLogo
+            variant={scrolled || open ? 'color' : 'light'}
+            className="brand-logo--compact"
+          />
         </a>
 
         <button

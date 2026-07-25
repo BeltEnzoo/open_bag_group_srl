@@ -4,11 +4,9 @@ type BrandLogoProps = {
 }
 
 export function BrandLogo({ variant = 'color', className = '' }: BrandLogoProps) {
-  const src = variant === 'light' ? '/logo/openbag-white.svg' : '/logo/openbag-web.svg'
-
   return (
     <img
-      src={src}
+      src="/logo/openbag-bicro.svg"
       alt="Open Bag"
       className={`brand-logo brand-logo--${variant} ${className}`.trim()}
     />
