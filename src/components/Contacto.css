@@ -1,0 +1,123 @@
+.contacto {
+  padding: clamp(4.5rem, 9vw, 7rem) 0;
+  background:
+    linear-gradient(180deg, #111 0%, #1a1a1a 100%);
+  color: var(--white);
+}
+
+.contacto__header {
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.contacto__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.contacto__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.contacto__channel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  transition: color 0.2s ease;
+}
+
+a.contacto__channel:hover strong {
+  color: var(--red);
+}
+
+.contacto__label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contacto__channel strong {
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 3vw, 1.9rem);
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.contacto__secondary {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.95rem;
+}
+
+.contacto__form {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto__form-lead {
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 0.25rem;
+}
+
+.contacto__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.contacto__form input,
+.contacto__form textarea {
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 0.8rem 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+
+.contacto__form input:focus,
+.contacto__form textarea:focus {
+  border-color: var(--red);
+}
+
+.contacto__form .btn {
+  margin-top: 0.35rem;
+  align-self: flex-start;
+}
+
+.contacto__ok {
+  color: #9fd4a8;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 800px) {
+  .contacto__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto__form .btn {
+    width: 100%;
+  }
+}
