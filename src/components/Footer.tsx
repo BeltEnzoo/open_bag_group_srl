@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="foot">
       <div className="shell foot__inner">
-        <BrandLogo variant="light" className="brand-logo--footer" />
+        <BrandLogo className="brand-logo--footer" />
         <div className="foot__meta">
           <p>© {year} Open Bag Group SRL</p>
           <p>Hipólito Irigoyen 728 — San Antonio de Areco, Bs. As.</p>

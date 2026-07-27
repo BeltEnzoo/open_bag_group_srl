@@ -32,7 +32,7 @@ export function Nav() {
     <header className={`nav ${scrolled ? 'nav--solid' : ''} ${open ? 'nav--open' : ''}`}>
       <div className="nav__bar shell">
         <a href="#top" className="nav__brand" aria-label="Open Bag">
-          <BrandLogo variant="light" className="brand-logo--nav" />
+          <BrandLogo className="brand-logo--nav" />
         </a>
 
         <button
