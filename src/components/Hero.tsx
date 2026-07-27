@@ -1,42 +1,69 @@
 import { useReveal } from '../hooks/useReveal'
-import { BrandLogo } from './BrandLogo'
 import './Hero.css'
 
 export function Hero() {
-  const ref = useReveal<HTMLDivElement>()
+  const ref = useReveal<HTMLElement>()
 
   return (
-    <section id="inicio" className="hero" aria-label="Portada">
-      <div className="hero__media" aria-hidden="true">
-        <img
-          src="/images/banner_home.jpg"
-          alt=""
-          className="hero__image"
-        />
-        <div className="hero__veil" />
-        <div className="hero__grain" />
-      </div>
+    <section id="top" className="hero" ref={ref}>
+      <div className="hero__stage">
+        <div className="hero__copy">
+          <p className="hero__eyebrow reveal">San Antonio de Areco · Bs. As.</p>
+          <h1 className="display hero__title">
+            <span className="reveal">Fabricamos</span>
+            <span className="reveal d1 hero__title-accent">confianza</span>
+            <span className="reveal d2">en cada big bag</span>
+          </h1>
+          <p className="hero__lead reveal d3">
+            Envases flexibles complejos para industria alimenticia, química, agro,
+            petrolera, ganadera y pesquera.
+          </p>
+          <div className="hero__actions reveal d4">
+            <a href="#contacto" className="btn-red">
+              Pedir cotización
+            </a>
+            <a href="#planta" className="btn-line">
+              Ver la planta
+            </a>
+          </div>
+        </div>
 
-      <div className="hero__content container reveal" ref={ref}>
-        <BrandLogo className="brand-logo--hero reveal-delay-1" />
-        <h1 className="hero__title reveal-delay-1">Envases flexibles</h1>
-        <p className="hero__lead reveal-delay-2">
-          Nos especializamos en big bag complejos para la industria alimenticia,
-          química, agro, petrolera, ganadera y pesquera.
-        </p>
-        <div className="hero__actions reveal-delay-3">
-          <a href="#contacto" className="btn">
-            Contactanos
-          </a>
-          <a href="#nosotros" className="btn btn--ghost">
-            Conocenos
-          </a>
+        <div className="hero__visual reveal d2" aria-hidden="true">
+          <div className="hero__frame">
+            <img src="/images/new/img1.jpeg" alt="" className="hero__img" />
+            <div className="hero__scrub" />
+          </div>
+          <div className="hero__badge">
+            <strong>1500 m²</strong>
+            <span>planta modelo</span>
+          </div>
         </div>
       </div>
 
-      <a href="#nosotros" className="hero__scroll" aria-label="Ir a Nosotros">
-        <span />
-      </a>
+      <div className="hero__rail" aria-hidden="true">
+        <div className="hero__rail-track">
+          <span>BIG BAGS</span>
+          <span>·</span>
+          <span>LINERS</span>
+          <span>·</span>
+          <span>ÁRIDOS</span>
+          <span>·</span>
+          <span>IMPRESIÓN HD</span>
+          <span>·</span>
+          <span>ENTREGA 100 KM</span>
+          <span>·</span>
+          <span>BIG BAGS</span>
+          <span>·</span>
+          <span>LINERS</span>
+          <span>·</span>
+          <span>ÁRIDOS</span>
+          <span>·</span>
+          <span>IMPRESIÓN HD</span>
+          <span>·</span>
+          <span>ENTREGA 100 KM</span>
+          <span>·</span>
+        </div>
+      </div>
     </section>
   )
 }

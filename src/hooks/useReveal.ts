@@ -24,7 +24,7 @@ export function useReveal<T extends HTMLElement = HTMLElement>() {
           observer.unobserve(node)
         }
       },
-      { threshold: 0.12, rootMargin: '0px 0px -6% 0px' },
+      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
     )
 
     observer.observe(node)

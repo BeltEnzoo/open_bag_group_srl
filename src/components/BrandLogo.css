@@ -2,31 +2,20 @@
   display: block;
   width: auto;
   height: auto;
-  max-height: 5.25rem;
-  max-width: 9.5rem;
-  object-fit: contain;
-  object-position: center;
-}
-
-.brand-logo--light {
-  filter: brightness(0) invert(1);
-}
-
-.brand-logo--hero {
-  max-height: clamp(7.5rem, 22vw, 11rem);
-  max-width: min(18rem, 70vw);
-  filter:
-    drop-shadow(0 0 12px rgba(255, 255, 255, 0.55))
-    drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
-}
-
-.brand-logo--compact {
-  max-height: 5.1rem;
+  max-height: 4.8rem;
   max-width: 9rem;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* no CSS invert — use dedicated light PNG so red stays red */
+
+.brand-logo--nav {
+  max-height: 4.85rem;
+  max-width: 9.25rem;
 }
 
 .brand-logo--footer {
-  max-height: 4.5rem;
-  max-width: 8rem;
-  opacity: 0.95;
+  max-height: 5.25rem;
+  max-width: 10rem;
 }

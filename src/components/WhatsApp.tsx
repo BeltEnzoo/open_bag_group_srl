@@ -7,27 +7,23 @@ export function WhatsApp() {
   const [showTip, setShowTip] = useState(false)
 
   useEffect(() => {
-    const timer = window.setTimeout(() => setShowTip(true), 1800)
-    const hide = window.setTimeout(() => setShowTip(false), 7000)
+    const show = window.setTimeout(() => setShowTip(true), 2200)
+    const hide = window.setTimeout(() => setShowTip(false), 7500)
     return () => {
-      window.clearTimeout(timer)
+      window.clearTimeout(show)
       window.clearTimeout(hide)
     }
   }, [])
 
   return (
     <div className="wa">
-      {showTip && (
-        <div className="wa__tip" role="status">
-          ¡Hola! ¿En qué puedo ayudarte?
-        </div>
-      )}
+      {showTip && <div className="wa__tip">¿Cotizamos tu pedido?</div>}
       <a
         className="wa__btn"
         href={`https://wa.me/${WHATSAPP}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Escribinos por WhatsApp"
+        aria-label="WhatsApp Open Bag"
         onMouseEnter={() => setShowTip(true)}
         onMouseLeave={() => setShowTip(false)}
       >

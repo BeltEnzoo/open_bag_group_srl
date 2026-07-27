@@ -1,9 +1,9 @@
-import { Header } from './components/Header'
+import { Nav } from './components/Nav'
 import { Hero } from './components/Hero'
-import { Nosotros } from './components/Nosotros'
-import { WhyUs } from './components/WhyUs'
-import { Servicios } from './components/Servicios'
-import { Gallery } from './components/Gallery'
+import { Plant } from './components/Plant'
+import { Capacidad } from './components/Capacidad'
+import { Work } from './components/Work'
+import { Pagos } from './components/Pagos'
 import { Contacto } from './components/Contacto'
 import { Footer } from './components/Footer'
 import { WhatsApp } from './components/WhatsApp'
@@ -11,13 +11,13 @@ import { WhatsApp } from './components/WhatsApp'
 export default function App() {
   return (
     <>
-      <Header />
+      <Nav />
       <main>
         <Hero />
-        <Nosotros />
-        <WhyUs />
-        <Servicios />
-        <Gallery />
+        <Plant />
+        <Capacidad />
+        <Work />
+        <Pagos />
         <Contacto />
       </main>
       <Footer />

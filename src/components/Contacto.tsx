@@ -35,78 +35,72 @@ export function Contacto() {
   }
 
   return (
-    <section id="contacto" className="contacto" ref={ref}>
-      <div className="container">
-        <header className="contacto__header reveal">
-          <h2 className="section-title section-title--light">Contactanos</h2>
-          <div className="section-rule section-rule--light" aria-hidden="true">
-            <span />
-          </div>
-        </header>
+    <section id="contacto" className="contact" ref={ref}>
+      <div className="shell contact__grid">
+        <div className="contact__left reveal">
+          <p className="contact__kicker">Contacto</p>
+          <h2 className="display contact__title">
+            Contanos
+            <br />
+            qué necesitás
+          </h2>
+          <p className="contact__lead">
+            Respondemos por WhatsApp con tiempos reales de planta.
+          </p>
 
-        <div className="contacto__grid">
-          <div className="contacto__info reveal reveal-delay-1">
-            <a
-              className="contacto__channel"
-              href={`https://wa.me/${WHATSAPP}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="contacto__label">WhatsApp</span>
-              <strong>02326-15401438</strong>
-            </a>
-            <a className="contacto__channel" href="tel:+542326455469">
-              <span className="contacto__label">Teléfono planta</span>
-              <strong>02326-455469</strong>
-            </a>
-            <div className="contacto__channel">
-              <span className="contacto__label">Dirección</span>
-              <strong>
-                Hipólito Irigoyen 728 — San Antonio de Areco, Bs. As., Argentina
-              </strong>
-            </div>
-            <a className="contacto__channel" href="mailto:info@openbag.com.ar">
-              <span className="contacto__label">Mail</span>
-              <strong>info@openbag.com.ar</strong>
-              <span className="contacto__secondary">openbagtextil@gmail.com</span>
-            </a>
-          </div>
-
-          <form className="contacto__form reveal reveal-delay-2" onSubmit={onSubmit}>
-            <p className="contacto__form-lead">
-              Contanos qué necesitás y te respondemos por WhatsApp.
-            </p>
-            <label>
-              Nombre
-              <input name="name" type="text" required placeholder="Tu nombre" />
-            </label>
-            <label>
-              Email
-              <input name="email" type="email" placeholder="tu@empresa.com" />
-            </label>
-            <label>
-              Teléfono
-              <input name="phone" type="tel" placeholder="Código de área + número" />
-            </label>
-            <label>
-              Mensaje
-              <textarea
-                name="message"
-                required
-                rows={4}
-                placeholder="Modelo, cantidad, destino..."
-              />
-            </label>
-            <button type="submit" className="btn">
-              Enviar por WhatsApp
-            </button>
-            {sent && (
-              <p className="contacto__ok" role="status">
-                Se abrió WhatsApp con tu consulta.
-              </p>
-            )}
-          </form>
+          <ul className="contact__channels">
+            <li>
+              <span>WhatsApp</span>
+              <a href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noopener noreferrer">
+                02326-15401438
+              </a>
+            </li>
+            <li>
+              <span>Planta</span>
+              <a href="tel:+542326455469">02326-455469</a>
+            </li>
+            <li>
+              <span>Mail</span>
+              <a href="mailto:info@openbag.com.ar">info@openbag.com.ar</a>
+            </li>
+            <li>
+              <span>Dirección</span>
+              <strong>Hipólito Irigoyen 728 · San Antonio de Areco</strong>
+            </li>
+          </ul>
         </div>
+
+        <form className="contact__form reveal d2" onSubmit={onSubmit}>
+          <label>
+            Nombre
+            <input name="name" required placeholder="Tu nombre o empresa" />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" placeholder="tu@empresa.com" />
+          </label>
+          <label>
+            Teléfono
+            <input name="phone" type="tel" placeholder="Código + número" />
+          </label>
+          <label>
+            Mensaje
+            <textarea
+              name="message"
+              required
+              rows={4}
+              placeholder="Modelo, cantidad, destino..."
+            />
+          </label>
+          <button type="submit" className="btn-red">
+            Enviar por WhatsApp
+          </button>
+          {sent && (
+            <p className="contact__ok" role="status">
+              Se abrió WhatsApp con tu consulta.
+            </p>
+          )}
+        </form>
       </div>
     </section>
   )
