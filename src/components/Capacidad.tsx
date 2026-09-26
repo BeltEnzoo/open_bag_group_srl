@@ -2,10 +2,10 @@ import { useReveal } from '../hooks/useReveal'
 import './Capacidad.css'
 
 const stats = [
-  { value: '10+', label: 'años fabricando' },
+  { value: '20', label: 'años fabricando' },
   { value: '1500', label: 'm² de planta' },
   { value: '100', label: 'km sin costo de envío' },
-  { value: '7', label: 'provincias con presencia' },
+  { value: '15', label: 'provincias con presencia' },
 ]
 
 const industries = [
@@ -47,20 +47,28 @@ export function Capacidad() {
           <div className="cap__text reveal">
             <h3 className="display">Lo que hacemos</h3>
             <p>
-              Fabricamos envases a medida y trabajamos con liners de alta
-              calidad. Abastecemos a Nestlé, Atanor, Toyota y a empresas de
-              exportación.
+              Fabricamos envases de todos los modelos y especificaciones para
+              cada sector: big bag válvula-válvula, pollera y válvula de
+              descarga, pollera y fondo ciego, válvula de carga y fondo de
+              descarga total, big bag con mamparos, big bag ventilados, sling
+              bag para exportación, maxi bag y bulk bag.
             </p>
             <p>
-              Líneas para áridos y corralones: bolsones de 1 m y ½ m, impresión
-              en 4 caras en alta definición y departamento gráfico propio.
+              Contamos con líneas para el sector de los áridos: bolsones para
+              corralones de 1 metro y de medio metro, con impresión en las 4
+              caras en alta definición.
+            </p>
+            <p>
+              Tenemos departamento propio de diseño y corte de clisé de logos.
+              La entrega es rápida y el abastecimiento a nuestros clientes es
+              casi inmediato.
             </p>
           </div>
 
           <div className="cap__shot reveal d2">
             <img
-              src="/images/new/img7.jpeg"
-              alt="Big bag Open Bag en operación"
+              src="/images/new/img14.jpeg"
+              alt="Bolsones de áridos impresos para corralón"
             />
             <div className="cap__industries">
               <p className="cap__industries-label">Sectores</p>
@@ -77,8 +85,9 @@ export function Capacidad() {
           <div className="cap__models-copy">
             <h3 className="display">Modelos de big bag</h3>
             <p>
-              Boca abierta, pollera de carga, válvula de carga, fondo ciego o
-              válvula de descarga. Configuramos según tu operación.
+              Válvula-válvula, pollera, fondo ciego, mamparos, ventilados, sling
+              bag, maxi bag y bulk bag. Cada modelo se ajusta a la carga y al
+              sector.
             </p>
           </div>
           <img

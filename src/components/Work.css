@@ -13,7 +13,7 @@
 }
 
 .work__title {
-  font-size: clamp(3rem, 8vw, 5.8rem);
+  font-size: clamp(2.3rem, 4.6vw, 3.8rem);
   margin-bottom: 1rem;
 }
 
@@ -71,6 +71,11 @@
 .work__cell:nth-child(10) { grid-column: span 3; grid-row: span 2; }
 .work__cell:nth-child(11) { grid-column: span 3; grid-row: span 2; }
 .work__cell:nth-child(12) { grid-column: span 3; grid-row: span 2; }
+.work__cell:nth-child(13) { grid-column: span 6; grid-row: span 2; }
+.work__cell:nth-child(14) { grid-column: span 6; grid-row: span 2; }
+.work__cell:nth-child(15) { grid-column: span 4; grid-row: span 2; }
+.work__cell:nth-child(16) { grid-column: span 4; grid-row: span 2; }
+.work__cell:nth-child(17) { grid-column: span 4; grid-row: span 2; }
 
 @media (max-width: 800px) {
   .work__mosaic {

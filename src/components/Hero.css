@@ -1,6 +1,6 @@
 .hero {
   min-height: 100svh;
-  padding: calc(var(--nav-h) + 1.5rem) 0 0;
+  padding: calc(var(--nav-h) + 0.75rem) 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,8 +18,8 @@
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: clamp(1.5rem, 4vw, 3.5rem);
-  align-items: end;
-  padding-bottom: 2rem;
+  align-items: start;
+  padding-bottom: 1.5rem;
   flex: 1;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .hero__title {
-  font-size: clamp(3.8rem, 11vw, 7.8rem);
+  font-size: clamp(2.5rem, 5.2vw, 4.35rem);
   max-width: 11ch;
   margin-bottom: 1.4rem;
 }
@@ -48,8 +48,9 @@
 
 .hero__lead {
   max-width: 28rem;
-  color: var(--mist);
-  font-size: 1.05rem;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
@@ -62,23 +63,31 @@
 
 .hero__visual {
   position: relative;
-  min-height: min(62svh, 560px);
+  min-height: min(42svh, 440px);
 }
 
 .hero__frame {
   position: absolute;
-  inset: 8% 0 0 8%;
+  inset: 0 0 0 6%;
   overflow: hidden;
   clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
 }
 
 .hero__img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.08);
-  animation: drift 18s ease-in-out infinite alternate;
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity 1s ease;
   filter: saturate(0.85) contrast(1.05);
+}
+
+.hero__img.is-active {
+  opacity: 1;
+  animation: drift 18s ease-in-out infinite alternate;
 }
 
 .hero__scrub {
@@ -133,7 +142,7 @@
   font-size: 1.15rem;
   letter-spacing: 0.12em;
   color: rgba(243, 241, 238, 0.45);
-  animation: marquee 28s linear infinite;
+  animation: marquee 18s linear infinite;
 }
 
 @keyframes drift {

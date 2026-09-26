@@ -6,7 +6,7 @@ import './Work.css'
 const shots = [
   { src: '/images/new/img3.jpeg', alt: 'Big bags listos para despacho' },
   { src: '/images/new/img13.jpeg', alt: 'Confección en planta Open Bag' },
-  { src: '/images/new/img7.jpeg', alt: 'Big bag en operación con autoelevador' },
+  { src: '/images/new/img14.jpeg', alt: 'Bolsones de áridos impresos en obra' },
   { src: '/images/new/img2.jpeg', alt: 'Depósito y stock en fachada' },
   { src: '/images/new/img10.jpeg', alt: 'Línea de costura industrial' },
   { src: '/images/new/img5.jpeg', alt: 'Pallets de envases flexibles' },
@@ -16,6 +16,11 @@ const shots = [
   { src: '/images/new/img11.jpeg', alt: 'Detalle de fabricación' },
   { src: '/images/new/img9.jpeg', alt: 'Identidad Open Bag' },
   { src: '/images/new/img8.jpeg', alt: 'Marca Open Bag Group' },
+  { src: '/images/new/img15.jpeg', alt: 'Oficina Open Bag Group' },
+  { src: '/images/new/img16.jpeg', alt: 'Vidrio de oficina con certificación SENASA' },
+  { src: '/images/new/img17.jpeg', alt: 'Flota de camionetas Open Bag Group' },
+  { src: '/images/new/img18.jpeg', alt: 'Despacho de big bags en camioneta' },
+  { src: '/images/new/logo_cliente.jpeg', alt: 'Cartel Open Bag Group frente a la planta' },
 ]
 
 export function Work() {

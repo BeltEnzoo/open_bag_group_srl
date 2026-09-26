@@ -30,18 +30,34 @@ export function Plant() {
 
         <div className="plant__copy reveal d3">
           <p>
-            Somos una empresa joven con amplia experiencia en la fabricación de
-            envases flexibles — big bags — desde San Antonio de Areco.
+            Somos una empresa con <strong>20 años de experiencia</strong> en la
+            fabricación de envases flexibles (big bags) desde nuestra planta en
+            San Antonio de Areco, Buenos Aires.
           </p>
           <p>
-            Estamos a 113 km de Capital Federal, sobre Ruta Nacional 8 y Ruta
-            Provincial 41, con conectividad a Rutas 7 y 9.
+            Abastecemos de envases a gran parte del país, con productos de alta
+            calidad para los distintos sectores industriales.
           </p>
           <p>
-            Invertimos en el parque industrial{' '}
-            <strong>Juan Hipólito Vieytes</strong>: una planta modelo de 1500 m²
-            para tecnificar, agilizar y llevar la calidad al máximo.
+            La planta está a 113 km de Capital Federal, sobre Ruta Nacional 8 y
+            Ruta Provincial 41, con conectividad cercana a las rutas nacionales
+            7 y 9.
           </p>
+          <p>
+            Nos especializamos en big bag para la industria alimenticia, química,
+            agro, petrolera, ganadera, pesquera y de los áridos.
+          </p>
+          <p>
+            Actualmente estamos <strong>construyendo la nueva planta</strong> en
+            el parque industrial Juan Hipólito Vieytes de San Antonio de Areco:
+            1500 m² para crecer en capacidad, tecnificar, agilizar el servicio y
+            sostener la máxima calidad de los envases.
+          </p>
+          <img
+            src="/images/senasa.png"
+            alt="Certificación SENASA N° E-2983"
+            className="plant__senasa"
+          />
           <a href="#capacidad" className="btn-line">
             Nuestra capacidad
           </a>

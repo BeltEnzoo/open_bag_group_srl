@@ -18,7 +18,7 @@
 }
 
 .plant__headline {
-  font-size: clamp(3.2rem, 9vw, 6.5rem);
+  font-size: clamp(2.3rem, 4.6vw, 3.9rem);
   max-width: 12ch;
   color: var(--ink);
 }
@@ -62,12 +62,22 @@
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
-  color: #3a3a3a;
+  color: #1a1a1a;
+  font-weight: 600;
   font-size: 1.05rem;
 }
 
 .plant__copy strong {
   color: var(--ink);
+}
+
+.plant__senasa {
+  align-self: flex-start;
+  width: min(220px, 70%);
+  height: auto;
+  margin-top: 0.35rem;
+  background: #fff;
+  padding: 0.45rem 0.6rem;
 }
 
 .plant__copy .btn-line {

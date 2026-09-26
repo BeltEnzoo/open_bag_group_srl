@@ -13,7 +13,7 @@ export function Footer() {
           <p>Hipólito Irigoyen 728 — San Antonio de Areco, Bs. As.</p>
         </div>
         <div className="foot__links">
-          <a href="mailto:info@openbag.com.ar">info@openbag.com.ar</a>
+          <a href="mailto:openbagtextil@gmail.com">openbagtextil@gmail.com</a>
           <a href="tel:+542326455469">02326-455469</a>
         </div>
       </div>

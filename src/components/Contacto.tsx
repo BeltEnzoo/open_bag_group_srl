@@ -61,7 +61,7 @@ export function Contacto() {
             </li>
             <li>
               <span>Mail</span>
-              <a href="mailto:info@openbag.com.ar">info@openbag.com.ar</a>
+              <a href="mailto:openbagtextil@gmail.com">openbagtextil@gmail.com</a>
             </li>
             <li>
               <span>Dirección</span>

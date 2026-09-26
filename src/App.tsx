@@ -3,6 +3,7 @@ import { Hero } from './components/Hero'
 import { Plant } from './components/Plant'
 import { Capacidad } from './components/Capacidad'
 import { Work } from './components/Work'
+import { Clientes } from './components/Clientes'
 import { Pagos } from './components/Pagos'
 import { Contacto } from './components/Contacto'
 import { Footer } from './components/Footer'
@@ -17,6 +18,7 @@ export default function App() {
         <Plant />
         <Capacidad />
         <Work />
+        <Clientes />
         <Pagos />
         <Contacto />
       </main>
