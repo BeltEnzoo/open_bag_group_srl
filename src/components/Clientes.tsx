@@ -11,6 +11,13 @@ const names: Record<string, string> = {
   atanor: 'Atanor',
   toyota: 'Toyota',
   holcim: 'Holcim',
+  gdm: 'GDM',
+  donmario: 'DonMario Semillas',
+  'illinois-semillas': 'Illinois Semillas',
+  neogen: 'Neogen',
+  stine: 'STINE',
+  molinos: 'Molinos Río de la Plata',
+  bunge: 'Bunge',
   'alimentos-sagemuller': 'Alimentos Sagemüller',
   'rgs-refineria-sudamericana': 'RGS Refinería Sudamericana',
   klein: 'Klein',
@@ -31,7 +38,12 @@ const logos = Object.entries(logoModules)
     const id = path.split('/').pop()?.replace(/\.[^.]+$/, '') ?? 'cliente'
     return { src, id, name: names[id] ?? id }
   })
-  .sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id))
+  .filter((logo) => !logo.id.startsWith('_'))
+  .sort((a, b) => {
+    const ai = order.indexOf(a.id)
+    const bi = order.indexOf(b.id)
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi)
+  })
 
 export function Clientes() {
   const ref = useReveal<HTMLElement>()
@@ -46,8 +58,9 @@ export function Clientes() {
           eligen nuestros envases
         </h2>
         <p className="clientes__lead reveal d2">
-          Trabajamos para industrias de alimentos, química y automotriz, y
-          abastecemos operaciones de exportación en distintas provincias.
+          Trabajamos con industrias de alimentos, química, automotriz y
+          semillas. Somos distribuidores para Semillas STINE y proveedores de
+          Molinos Río de la Plata y Bunge.
         </p>
       </div>
 

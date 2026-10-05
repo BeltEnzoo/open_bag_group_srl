@@ -15,6 +15,22 @@ export function Plant() {
         </h2>
       </div>
 
+      <div className="plant__video-wrap shell reveal d1">
+        <video
+          className="plant__video"
+          src="/videos/video1.mp4"
+          poster="/images/new/img10.jpeg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls
+          preload="metadata"
+        >
+          Tu navegador no reproduce video. Abrí el archivo desde la planta.
+        </video>
+      </div>
+
       <div className="plant__layout shell">
         <div className="plant__media reveal d2">
           <img

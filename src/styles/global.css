@@ -11,7 +11,7 @@
   --font-display: 'Oswald', sans-serif;
   --font-body: 'Source Sans 3', system-ui, sans-serif;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
-  --nav-h: 7.5rem;
+  --nav-h: 5.25rem;
 }
 
 *,

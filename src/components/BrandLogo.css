@@ -1,16 +1,17 @@
 .brand-logo {
   display: block;
   width: auto;
-  height: 6.4rem;
-  max-width: none;
+  height: 3.6rem;
+  max-width: min(18rem, 52vw);
   object-fit: contain;
   object-position: left center;
 }
 
 .brand-logo--nav {
-  height: 6.6rem;
+  height: 3.85rem;
 }
 
 .brand-logo--footer {
-  height: 5.2rem;
+  height: 3.4rem;
+  max-width: 16rem;
 }
